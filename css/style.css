@@ -1,0 +1,95 @@
+body{
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+}
+header{
+    /* border: 2px red solid; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#left-side{
+    margin-top: 20px;
+    display: block;
+    float: left;
+    border: 2px black solid;
+    width: 50%;
+}
+#search{
+    display: flex;
+    justify-content: center;
+    
+    height: 50px;
+}
+form{
+    /* border: 2px solid steelblue; */
+    width: 100%;
+    margin-left: 30px;
+}
+#text{
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 4px;
+    width: 50%;
+    outline: none;
+    font-size: large;
+    padding-left: 5px;
+    color: black;
+   
+
+}
+
+#submitButton{
+    height: 38px;
+    /* margin-top: 10px; */
+    border-radius: 5px;
+    width: 30%;
+    outline: none;
+    background-color: tomato;
+    color: white;
+    font-size: large;
+   
+}
+#ingredients{
+    display: flex;
+    border: 2px solid red;
+    justify-content: left;
+    margin-left: 30px;
+   
+}
+
+#recipe{
+    display: flex;
+    border: 2px solid red;
+    justify-content: left;
+    margin-left: 30px;
+}
+
+#img-link{
+    display: flex;
+    border: 2px solid red;
+    justify-content: left;
+    margin-left: 30px;
+
+}
+
+#right-side{
+    margin-top: 20px;
+    display: grid;
+    border: 2px pink solid;
+}
+
+#havelist{
+    display: block;
+    border: 2px solid red;
+    justify-content: left;
+    
+}
+#shoppinglist{
+    display: block;
+    border: 2px solid red;
+    justify-content: left;   
+}

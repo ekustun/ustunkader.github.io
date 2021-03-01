@@ -23,3 +23,6 @@ A simple web application that displays meal data using the Meal API and a shoppi
 
 ## Getting Started
 
+The Display of Web App: 
+https://ibb.co/mzD4Vjy
+
