@@ -3,6 +3,7 @@ body{
     padding:0;
     height: 100%;
     width: 100%;
+    background-color: blanchedalmond;
 }
 header{
     /* border: 2px red solid; */
@@ -11,9 +12,11 @@ header{
     margin-top: 50px;
 }
 
+/**************************** LEFT SIDE  *******************************/ 
 #left-side{
     margin-top: 20px;
     display: block;
+    height: auto;
     float: left;
     border: 2px black solid;
     width: 50%;
@@ -21,7 +24,6 @@ header{
 #search{
     display: flex;
     justify-content: center;
-    
     height: 50px;
 }
 form{
@@ -38,7 +40,6 @@ form{
     font-size: large;
     padding-left: 5px;
     color: black;
-   
 
 }
 
@@ -55,17 +56,22 @@ form{
 }
 #ingredients{
     display: flex;
+    flex-direction: column;
     border: 2px solid red;
-    justify-content: left;
+    height: 320px;
     margin-left: 30px;
+    margin-right: 30px;
    
 }
 
 #recipe{
     display: flex;
+    flex-direction: column;
     border: 2px solid red;
     justify-content: left;
     margin-left: 30px;
+    margin-right: 30px;
+    height: 520px;
 }
 
 #img-link{
@@ -73,6 +79,7 @@ form{
     border: 2px solid red;
     justify-content: left;
     margin-left: 30px;
+    margin-right: 30px;
 
 }
 
@@ -92,4 +99,36 @@ form{
     display: block;
     border: 2px solid red;
     justify-content: left;   
+
+}
+
+h3{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    /* height: 50px; */
+}
+
+#listIngredients{
+    /* list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fb-heart.gif); */
+    /* border: 2px rebeccapurple solid; */
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ingList{
+    margin: 4px;
+    border-bottom: 1px solid black; 
+
+}
+
+/********** IMAGE AND LINK  *************/
+
+#img-link{
+
+    display: flex;
+    flex-direction: row;
+
+
 }
