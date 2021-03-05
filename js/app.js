@@ -10,6 +10,7 @@ let userInput;
 const $instructions = $('#instructions');
 const $input = $('input[type="text"]');
 const $link = $('#imagelink');
+const $image = $('#img');
 const $list1 = $('#li1');
 const $list2 = $('#li2');
 const $list3 = $('#li3');
@@ -49,7 +50,11 @@ function render(){
         $('#instructions').append($('<li>').text(element));
     });
 
+ 
     
+    let imgNew = document.createElement('img');
+    imgNew.src = mealData.meals[0].strMealThumb;
+    $image.append(imgNew);
 
     $link.text(mealData.meals[0].strYoutube);
     $list1.text(mealData.meals[0].strIngredient1);
@@ -57,6 +62,7 @@ function render(){
     $list3.text(mealData.meals[0].strIngredient3);
     $list4.text(mealData.meals[0].strIngredient4);
     $list5.text(mealData.meals[0].strIngredient5);
+   
 
 
 

@@ -11,88 +11,91 @@
     <title>MEAL DATABASE</title>
 </head>
 <body>
-    <header id="title">
-        <h1>MEAL SEARCH AND SHOPPING LIST</h1>
-    </header>
-    <section id="left-side">
-        <section id="search">
+
+    <div id="title">
+        <a href="/" >
+            <img src="css/logo.png" alt="logo">
+        </a>
+        <nav role="navigation" id="menu">
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Contact</a>
+        </nav>
+        
+    </div>
+
+    <div id="search">
+        <section id="search-section">
             <form>
                 <input id="text" type="text" placeholder="Meal Name"/>
                 <input id="submitButton" type="submit" value="Get Meal Info"/>
             </form>
         </section>
-        <section id="ingredients">
-            
-            <h3 class="namesIngredients">Ingredients</h3>
-            <!-- <ol id="listIngredients">
+    </div>
 
-                <li id="li1"></li>
-                <li id="li2"></li>
-                <li id="li3"></li>
-                <li id="li4"></li>
-                <li id="li5"></li>
-                
-            </ol> -->
 
-            <ol id="listIngredients">
-                <li class="ingList">
-                    <label class="control control-radio" for="1">
-                        <input type="radio" id="1" name="ing1" value="ing1">
-                        <span id="li1"></span>
-                        
-                    </label>
-                </li>
-                <li class="ingList">
-                    <label class="control control-radio" for="1">
-                        <input type="radio" id="2" name="ing2" value="ing2">
-                        <span id="li2"></span>
-                        
-                    </label>
-                </li>
-                <li class="ingList">
-                    <label class="control control-radio" for="1">
-                        <input type="radio" id="3" name="ing3" value="ing3">
-                        <span id="li3"></span>
-                        
-                    </label>
-                </li>
-                <li class="ingList">
-                    <label class="control control-radio" for="1">
-                        <input type="radio" id="4" name="ing4" value="ing4">
-                        <span id="li4"></span>
-                        <div class="control-indicator"></div>
-                    </label>
-                </li>
-                <li class="ingList">
-                    <label class="control control-radio" for="1">
-                        <input type="radio" id="5" name="ing5" value="ing5">
-                        <span id="li5"></span>
-                        <div class="control-indicator"></div>
-                    </label>
-                </li>
-            </ol>
-        </section>
-
-        <section id="recipe">
-            <h3 class="names">Recipe</h3>
-            <ol id="instructions">  
-            </ol>
-        </section>
-        <section id="img-link">
-           
-            <section id="img">
-                <h3 class="names">Image</h3>
-                <img>
+    <section id="information">
+        <div id="image-ing">
+            <section id="image">
+                <!-- <a> <img src="css/recipe.jpg" height="250" width="200"></a> -->
+                <a id="img"></a>
             </section>
-            <section id="link">
-                <h3 class="names">Link</h3>
-                <a id="imagelink">
+            <section id="ingredients">
+                <h3 class="namesIngredients">Ingredients</h3>
+                <ol id="listIngredients">
+                    <li class="ingList">
+                        <label class="control control-radio" for="1">
+                            <input type="radio" id="1" name="ing1" value="ing1">
+                            <span id="li1"></span>
+                            
+                        </label>
+                    </li>
+                    <li class="ingList">
+                        <label class="control control-radio" for="1">
+                            <input type="radio" id="2" name="ing2" value="ing2">
+                            <span id="li2"></span>
+                            
+                        </label>
+                    </li>
+                    <li class="ingList">
+                        <label class="control control-radio" for="1">
+                            <input type="radio" id="3" name="ing3" value="ing3">
+                            <span id="li3"></span>
+                            
+                        </label>
+                    </li>
+                    <li class="ingList">
+                        <label class="control control-radio" for="1">
+                            <input type="radio" id="4" name="ing4" value="ing4">
+                            <span id="li4"></span>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </li>
+                    <li class="ingList">
+                        <label class="control control-radio" for="1">
+                            <input type="radio" id="5" name="ing5" value="ing5">
+                            <span id="li5"></span>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </li>
+                </ol>
             </section>
-            
-        </section>
+        </div>
+        <div id="recipe-div">
+            <section id="recipe">
+                <h3 class="names">Recipe</h3>
+                <ol id="instructions">  
+                </ol>
+            </section>
+        </div>
+        
+
+        
+       
+       
     </section>
  
-    <aside id="right-side">
+    <!-- <aside id="right-side">
         <section id="havelist">
             <h3 class="names">Lists - I have</h3>
             <ul></ul>
@@ -102,7 +105,7 @@
             <ul></ul>
         </section>
     </aside>
-    <footer id="foot"></footer>
+    <footer id="foot"></footer> -->
 
     
 </body>
