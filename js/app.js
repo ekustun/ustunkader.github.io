@@ -47,25 +47,45 @@ function render(){
     let newArr = arr[0].map(s=>s.slice(2))
     console.log(newArr)
     newArr.forEach(element => {
+        
         $('#instructions').append($('<li>').text(element));
+     
+
     });
 
+    
+
+    
  
     
-    let imgNew = document.createElement('img');
+    // let imgNew = document.createElement('img');
+    let imgNew = document.getElementById('image-alt');
     imgNew.src = mealData.meals[0].strMealThumb;
+    imgNew.style.height= "250px";
+    imgNew.style.width = "250px";
     $image.append(imgNew);
 
     $link.text(mealData.meals[0].strYoutube);
     $list1.text(mealData.meals[0].strIngredient1);
+    
     $list2.text(mealData.meals[0].strIngredient2);
     $list3.text(mealData.meals[0].strIngredient3);
     $list4.text(mealData.meals[0].strIngredient4);
     $list5.text(mealData.meals[0].strIngredient5);
    
 
-
-
+   
+    $('#li1').click(function(){
+        let existingList = document.getElementById('item1');
+        existingList.append(this.innerText);
+        
+    })
+    
+    $('#li2').click(function(){
+        let existingList = document.getElementById('item2');
+        existingList.append(this.innerText)
+    })
+    
 
 
 }
