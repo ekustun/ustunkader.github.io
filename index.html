@@ -11,11 +11,25 @@
     <title>MEAL DATABASE</title>
 </head>
 <body>
-
+    <!-- HEADER BLOCK -->
     <div id="title">
-        <a href="/" >
-            <img src="css/logo.png" alt="logo">
-        </a>
+
+        <nav role="navigation" id="socialmedia">
+            <a href="#"><img src="css/facebook-2.png" width="22px" height="22px"></a>
+            <a href="#"><img src="css/twitter-2.png" width="22px" height="22px"></a>
+            <a href="#"><img src="css/instagram.png" width="22px" height="22px"></a>
+            <a href="#"><img src="css/pinterest.png" width="22px" height="22px"></a>
+            <a href="#"><img src="css/google-plus.png" width="22px" height="22px"></a>
+            
+        </nav>
+
+        <nav id="logo">
+            <a href="/" >
+                <img src="css/logo.png" alt="logo">
+            </a>
+        </nav>
+        
+
         <nav role="navigation" id="menu">
             <a href="#">HOME</a>
             <a href="#">ABOUT</a>
@@ -24,23 +38,35 @@
         
     </div>
 
-    <div id="search">
-        <section id="search-section">
-            <form>
-                <input id="text" type="text" placeholder="Meal Name"/>
-                <input id="submitButton" type="submit" value="Get Meal Info"/>
-            </form>
-        </section>
-    </div>
+    <!-- SEARCH BLOCK -->
+    <section id="search-section">
+        <form>
+            <input id="text" type="text" placeholder="Meal Name"/>
+            <input id="submitButton" type="submit" value="Get Meal Info"/>
+        </form>
+    </section>
+
 
     <div id="information-block">
 
        <section id="image">
-            <a id="img"><img id="image-alt" src="css/main.jpg"></a>
+            <a id="img"><img id="image-alt" src="css/main.jpg" height="250px" width="250px"></a>
+            <div class="area">
+                <h4>Region </h4>
+                <p id="foodregion"></p>
+            </div>
+            <div class="area">
+                <h4>Type</h4>
+                <p id="foodtype"></p>
+            </div>
        </section>
 
        <section id="ingredients">
-           <h3 id="titleIngredients">Ingredients</h3>
+
+           <h1 id="name">NAME OF THE FOOD</h1> 
+          
+           <h2 id="titleIngredients">Ingredients</h2>
+
            <ol id="listIngredients">
                 <li class="ingList">
                     <label class="control control-radio" for="1">
@@ -52,18 +78,49 @@
                         <span id="li2"></span>
                     </label>
                 </li>
+                <li class="ingList">
+                    <label class="control control-radio" for="1">
+                        <span id="li3"></span>
+                    </label>
+                </li>
+                <li class="ingList">
+                    <label class="control control-radio" for="1">
+                        <span id="li4"></span>
+                    </label>
+                </li>
+                <li class="ingList">
+                    <label class="control control-radio" for="1">
+                        <span id="li5"></span>
+                    </label>
+                </li>
             </ol>
+
 
        </section>
 
-       <section id="mylist">
-            <h3 id="titleList">My List</h3>
-            <ol id="existing-list">
-                <li class="ex-item" >Water</li>
-                <li class="ex-item" >Flour</li>
-                <li class="ex-item">Butter</li>
+       <section id="list">
+           <section id="myList">
+                <h3 id="titleList">My List</h3>
+                <ol id="existing-list">
+                    <li class="ex-item" >Water</li>
+                    <li class="ex-item" >Flour</li>
+                    <li class="ex-item">Butter</li>
+                </ol>
+           </section>
+          
+            <section id="shoppinglist">
+                <h3 id="titleShoppingList">Shopping List</h3>
+                <ol id="shopping-list">
+                    <li class="item" id="item1"></li>
+                    <li class="item" id="item2"></li>
+                    <li class="item" id="item3"></li>
+                    <li class="item" id="item4"></li>
+                    <li class="item" id="item5"></li>
 
-            </ol>
+                </ol>
+            </section>
+           
+            
        </section>
 
     </div>
@@ -76,81 +133,7 @@
         </section>
     </div>
 
-    <div id="shopping-block">
-        <section id="shoppinglist">
-            <h3 id="titleShoppingList">Shopping List</h3>
-            <ol id="shopping-list">
-                <li class="item" id="item1"></li>
-                <li class="item" id="item2"></li>
-            </ol>
-        </section>
-    </div>
-<!--  
-    <section id="information">
-        <section id="image-ing-div">
-            <section id="image">
-                
-                <a id="img"></a>
-            </section>
-            <section id="ingredients">
-                <h3 class="namesIngredients">Ingredients</h3>
-                <ol id="listIngredients">
-                    <li class="ingList">
-                        <label class="control control-radio" for="1">
-                            
-                            <span id="li1"></span>
-                            
-                        </label>
-                    </li>
-                    <li class="ingList">
-                        <label class="control control-radio" for="1">
-                            
-                            <span id="li2"></span>
-                            
-                        </label>
-                    </li>
-                    <li class="ingList">
-                        <label class="control control-radio" for="1">
-                            
-                            <span id="li3"></span>
-                            
-                        </label>
-                    </li>
-                    <li class="ingList">
-                        <label class="control control-radio" for="1">
-                            
-                            <span id="li4"></span>
-                            
-                        </label>
-                    </li>
-                    <li class="ingList">
-                        <label class="control control-radio" for="1">
-                            <span id="li5"></span>
-                        </label>
-                    </li>
-                </ol>
-            </section>
-        </section>
-        <section id="recipe-div">
-            <section id="recipe">
-                <h3 class="names">Recipe</h3>
-                <ol id="instructions">  
-                </ol>
-            </section>
-        </section>       
-    </section>
--->
-    <!-- <aside id="right-side">
-        <section id="havelist">
-            <h3 class="names">Lists - I have</h3>
-            <ul></ul>
-        </section>
-        <section id="shoppinglist">
-            <h3 class="names">Shopping List</h3>
-            <ul></ul>
-        </section>
-    </aside>
-    <footer id="foot"></footer> -->
+   
 
     
 </body>

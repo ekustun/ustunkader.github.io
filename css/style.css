@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&family=Open+Sans+Condensed:wght@300;700&display=swap');
+
 body{
     margin-left:100px;
     margin-top: 50px;
@@ -5,66 +7,83 @@ body{
     padding:0;
     height: 100%;
     width: auto;
-    background-color:white;
+    /* background-color:#af2929; */
+    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
 }
 
-header{
-    /* border: 2px red solid; */
+/*********** HEADER ************/
+
+#title{
     display: flex;
+
+    width: 100%;
+    /* border: 2px solid blue; */
     justify-content: center;
-    margin-top: 50px;
+    align-items: center;
+    padding-top: 20px;
 }
-nav{
-    display: block;
-    position: relative;
+#socialmedia{
+    /* border: 2px red solid; */
+    float: left;
+    margin-right: 200px;
+    margin-bottom: 40px;
+}
+#socialmedia a{
+    margin-right: 10px;
+}
+
+#menu{
+    /* border: 2px red solid; */
     float: right;
-    margin-right: 150px;
-    margin-top: 50px;
+    margin-left: 200px;
+    margin-bottom: 40px;
+   
 }
-nav a{
+#menu a{
     width: 1265px;
     color: #af2929;
-    font-size: 24px;
+    font-size: 1rem;
     line-height: 30px;
-    margin: 10px;
+    margin-right: 10px;
 }
 
-#search{
-    margin-top: 20px;
+/***********   Search bar   ******************/
 
-}
+
 #search-section{
+    /* border: 2px solid blue; */
     display: flex;
     justify-content: center;
     height: 90px;
+    margin-top: 20px;
+    width: 100%;
 }
 form{
     margin: 20px;
+    /* border: 2px red solid; */
     width: 100%;
-    margin-left: 30px;
-    
 }
 #text{
+    /* border: 2px solid green; */
     height: 30px;
     margin-top: 10px;
-    margin-left: 300px;
+    margin-left:200px;
     width: 50%;
     outline: none;
     font-size: large;
     padding-left: 5px;
     color: black;
-
 }
-
 #submitButton{
     height: 38px;
     /* margin-top: 10px; */
-    width: 10%;
+    width: 15%;
     outline: none;
     background-color: #af2929;
     color: white;
     font-size: large;
-   
 }
 /**************************** INFORMATION   *******************************/ 
 
@@ -72,11 +91,14 @@ form{
 
 #information-block{
     margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 120px;
     display: flex;
     flex-direction: row;
     height: 500px;
-    width: auto;
-    /* border: 2px black solid; */
+/*    
+    border: 2px black solid; */
+    background-color: #FEFEFE;
 }
 
 /***********  MEAL IMAGE  *****************/
@@ -84,57 +106,84 @@ form{
 #image{
     /* border: 2px red solid; */
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
     width: 25%;
 }
-#img{
-    width: 60px;
-    height: 60px;
+.area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    /* border: 2px solid black; */
 }
-#image-alt{
-    height: 250px;
-    width: 250px;
-    margin: 80px;
-}
+
 
 /*************   INGREDIENTS        *********************/
 
 #ingredients{
-    /* border: 2px orange solid; */
     display: flex;
     flex-direction: column;
-    width: 50%;
+    /* border: 2px solid black; */
+    padding-left: 10px;
+    width: 40%;
 }
-
+h1{
+    margin-top:0;
+    margin-right: 100px;
+    width: auto;
+    padding:0;
+    border-bottom: 2px solid black;
+}
+#name{
+    font-size: 40px;
+    /* border: 2px solid red; */
+}
 #titleIngredients{
     /* border: 2px solid blue; */
     display:flex;
-    justify-content: center;
+    margin:0;
     font-size: 30px;
-    line-height: 30px;
-    padding-right: 300px;
+    line-height: 40px;
+    padding-right: 355px;
 }
 
 #listIngredients{
     /* border: 2px solid red; */
-    height: auto;
     display: flex;
+    padding-top: 10px;
+    padding-left: 15px;
+    width:70%;
+    height: 100%;
     flex-direction: column;
     margin-top: 0;
+   
 }
 .ingList{
     margin-bottom: 10px;
-    list-style: none;
+    /* border:2px solid black; */
+    
+    margin-right: 25px;
+    /* list-style: none; */
 }
 
 
 /************* MY LIST **********/
-#mylist{
+
+#list{
     /* border: 2px black solid; */
     display: flex;
     flex-direction: column;
+    
+
 
 }
+
+/* #myList{
+    border: 2px solid red;
+    padding-top: 0;
+} */
 #titleList{
     /* border: 2px solid blue; */
     display:flex;
@@ -160,6 +209,30 @@ form{
 
 }
 
+/******  SHOPPING LIST  ***********/
+#shoppinglist{
+    /* border: 2px red solid; */
+    height: 250px;
+}
+
+#titleShoppingList{
+    /* border: 2px solid black; */
+    display:flex;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 30px;
+    padding-right: 130px;
+    margin-left: 40px;
+}
+.item{
+
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+
+}
 /*********** RECIPE ************/
 
 #recipe-block{
@@ -169,6 +242,7 @@ form{
     justify-content: left;
     height: 520px;
     text-align:justify;
+    padding-left: 60px;
 }
 #recipeList{
     /* border: 2px solid black; */
@@ -180,22 +254,5 @@ form{
 }
 
 
-/******  SHOPPING LIST  ***********/
 
-#shopping-block{
-    /* border: 2px solid red; */
-    padding: 20px;
-}
-#titleShoppingList{
-    /* border: 2px solid black; */
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-}
-.item{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    list-style: none;
-}
 

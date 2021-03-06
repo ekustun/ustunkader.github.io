@@ -16,6 +16,9 @@ const $list2 = $('#li2');
 const $list3 = $('#li3');
 const $list4 = $('#li4');
 const $list5 = $('#li5');
+const $name = $('#name');
+const $foodregion = $('#foodregion');
+const $foodtype = $('#foodtype');
 
 
 
@@ -47,17 +50,9 @@ function render(){
     let newArr = arr[0].map(s=>s.slice(2))
     console.log(newArr)
     newArr.forEach(element => {
-        
         $('#instructions').append($('<li>').text(element));
-     
-
     });
 
-    
-
-    
- 
-    
     // let imgNew = document.createElement('img');
     let imgNew = document.getElementById('image-alt');
     imgNew.src = mealData.meals[0].strMealThumb;
@@ -73,7 +68,10 @@ function render(){
     $list4.text(mealData.meals[0].strIngredient4);
     $list5.text(mealData.meals[0].strIngredient5);
    
+    $name.text(mealData.meals[0].strMeal);
 
+    $foodregion.text(mealData.meals[0].strArea);
+    $foodtype.text(mealData.meals[0].strTags);
    
     $('#li1').click(function(){
         let existingList = document.getElementById('item1');
@@ -84,6 +82,21 @@ function render(){
     $('#li2').click(function(){
         let existingList = document.getElementById('item2');
         existingList.append(this.innerText)
+    })
+    $('#li3').click(function(){
+        let existingList = document.getElementById('item3');
+        existingList.append(this.innerText);
+        
+    })
+    $('#li4').click(function(){
+        let existingList = document.getElementById('item4');
+        existingList.append(this.innerText);
+        
+    })
+    $('#li5').click(function(){
+        let existingList = document.getElementById('item5');
+        existingList.append(this.innerText);
+        
     })
     
 
