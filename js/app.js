@@ -4,8 +4,6 @@
 const BASE_URL = 'https://themealdb.com/api/json/v1/1/search.php?';
 
 let mealData;
-let shoppingList = [];
-let haveList = [];
 let userInput;
 const $instructions = $('#instructions');
 const $input = $('input[type="text"]');
@@ -45,6 +43,7 @@ function handleGetData(event){
 
 function render(){
 
+    
     let arr=[];
     arr.push(mealData.meals[0].strInstructions.split("\r\n\r\n"))
     let newArr = arr[0].map(s=>s.slice(2))
