@@ -23,7 +23,15 @@ A simple web application that displays meal data using the Meal API and a shoppi
 - Google Fonts
 - Meal API
 
+## Challenges
 
+- The way the ingredients is displayed in the JSON file 
+
+
+## Updates
+
+- When a user clicks on an item in the shopping list, remove it and add it to my list
+- Adding a youtube link
 
 ## Getting Started
 
