@@ -44,6 +44,7 @@ function handleGetData(event){
 function render(){
 
     
+    // Getting recipe as a list
     let arr=[];
     arr.push(mealData.meals[0].strInstructions.split("\r\n\r\n"))
     let newArr = arr[0].map(s=>s.slice(2))
@@ -52,26 +53,32 @@ function render(){
         $('#instructions').append($('<li>').text(element));
     });
 
-    // let imgNew = document.createElement('img');
+
+    // Image
     let imgNew = document.getElementById('image-alt');
     imgNew.src = mealData.meals[0].strMealThumb;
     imgNew.style.height= "250px";
     imgNew.style.width = "250px";
     $image.append(imgNew);
 
-    $link.text(mealData.meals[0].strYoutube);
-    $list1.text(mealData.meals[0].strIngredient1);
     
+    // Ingredients
+    $list1.text(mealData.meals[0].strIngredient1);
     $list2.text(mealData.meals[0].strIngredient2);
     $list3.text(mealData.meals[0].strIngredient3);
     $list4.text(mealData.meals[0].strIngredient4);
     $list5.text(mealData.meals[0].strIngredient5);
    
+    // Name of the food
     $name.text(mealData.meals[0].strMeal);
 
+    // Country
     $foodregion.text(mealData.meals[0].strArea);
+
+    // tags
     $foodtype.text(mealData.meals[0].strTags);
    
+    // Ingredients are added to shopping list when clicked
     $('#li1').click(function(){
         let existingList = document.getElementById('item1');
         existingList.append(this.innerText);
