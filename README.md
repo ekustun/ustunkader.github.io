@@ -3,6 +3,11 @@
 
 ## creted another branch 
 
+Git branch checkout -b anotherbranch
+Git add .
+Git commit -m “another branch update”
+Git push origin anotherbranch
+
 ## DEPLOYED
 
 # Website Link
